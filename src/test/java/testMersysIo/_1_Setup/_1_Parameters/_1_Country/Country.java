@@ -5,6 +5,8 @@ import io.restassured.http.Cookies;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import testMersysIo._4_Education._2_Login.Login;
+
+import java.net.CookieStore;
 import java.util.HashMap;
 import java.util.Map;
 import static io.restassured.RestAssured.baseURI;
@@ -22,6 +24,7 @@ public class Country extends Login {
             userCredential.put("username",username);
             userCredential.put("password",password);
             userCredential.put("rememberMe","true");
+
 
             Cookies cookies=
                     given()

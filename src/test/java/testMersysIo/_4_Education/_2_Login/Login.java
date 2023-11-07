@@ -20,5 +20,9 @@ public class Login {
 
     public String categoryID;
 
+    public String rndAttestation;
+
+    public String AttestationID;
+
 
 }
